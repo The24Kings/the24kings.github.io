@@ -1,1 +1,4 @@
-# the24kings.github.io
+# Landing Page for all thing Kings!
+
+## What ever could you want from me?
+### Please go away :)
