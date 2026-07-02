@@ -1,1 +1,0 @@
-import{P as e,t}from"./jsx-runtime-Gqiz8q8b.js";import{n}from"./components-BaO2xkP4.js";import{l as r,p as i,u as a}from"./lib-DzryRfWq.js";var o=t(),s=({matches:e})=>{let t=e.find(e=>e.id===r.root)?.loaderData;return i(a(t,`about.md`),`About`)},c=e(function(){return(0,o.jsx)(n,{children:(0,o.jsx)(`h1`,{children:`About`})})});export{c as default,s as meta};
