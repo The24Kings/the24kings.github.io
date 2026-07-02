@@ -1,0 +1,1 @@
+import{P as e,t}from"./jsx-runtime-Gqiz8q8b.js";import{n}from"./components-BSLE-uey.js";var r=t(),i=()=>[{title:`The24Kings@portfolio`}],a=e(function(){return(0,r.jsx)(n,{children:(0,r.jsx)(`h1`,{children:`Welcome`})})});export{a as default,i as meta};
