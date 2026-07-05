@@ -1,4 +1,4 @@
-import{P as e,s as t,t as n}from"./jsx-runtime-Gqiz8q8b.js";import{f as r}from"./lib-DHi-KzTm.js";var i={metadata:{image:`/article/me.jpg`,title:`Project Overview`,date:`2025-05-24T00:00:00.000Z`,tags:[`Rust`,`TypeScript`,`Minecraft`,`C++`,`TCP/IP`],desc:`An overview of major projects I have created and worked on.`},body:`
+import{P as e,s as t,t as n}from"./jsx-runtime-0SVuILB0.js";import{f as r}from"./lib-Bz62epH1.js";var i={metadata:{image:`/article/me.jpg`,title:`Project Overview`,date:`2025-05-24T00:00:00.000Z`,tags:[`Rust`,`TypeScript`,`Minecraft`,`C++`,`TCP/IP`],desc:`An overview of major projects I have created and worked on.`},body:`
 <!-- markdownlint-disable-next-line MD025 -->
 # Overview
 

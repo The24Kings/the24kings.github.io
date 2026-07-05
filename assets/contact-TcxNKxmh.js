@@ -1,0 +1,1 @@
+import{P as e,t}from"./jsx-runtime-0SVuILB0.js";import{n}from"./components-BXICWUHd.js";import{l as r,p as i,u as a}from"./lib-Bz62epH1.js";var o=t(),s=({matches:e})=>{let t=e.find(e=>e.id===r.root)?.loaderData;return i(a(t,`contact.md`),`Contact`)},c=e(function(){return(0,o.jsx)(n,{children:(0,o.jsx)(`h1`,{children:`Contact`})})});export{c as default,s as meta};
