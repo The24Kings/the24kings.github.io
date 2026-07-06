@@ -1,1 +1,0 @@
-import{P as e,r as t,t as n}from"./jsx-runtime-0SVuILB0.js";import{n as r}from"./components-BXICWUHd.js";var i=n(),a=e(function(){return(0,i.jsxs)(r,{children:[(0,i.jsx)(`h1`,{className:`error`,children:`Sorry this page does not exist!`}),(0,i.jsx)(`p`,{children:(0,i.jsx)(t,{to:`/`,children:`Return home`})})]})});export{a as default};
