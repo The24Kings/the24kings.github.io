@@ -1,4 +1,4 @@
-import{P as e,s as t,t as n}from"./jsx-runtime-0SVuILB0.js";import{f as r}from"./lib-97GAheg7.js";var i={metadata:{image:`/article/me.jpg`,title:`Project Overview`,date:`2025-05-24T00:00:00.000Z`,tags:[`Rust`,`TypeScript`,`Minecraft`,`C++`,`TCP/IP`],desc:`An overview of major projects I have created and worked on.`},body:`
+import{P as e,s as t,t as n}from"./jsx-runtime-0SVuILB0.js";import{f as r}from"./lib-ZYSSf6Ly.js";var i={metadata:{image:`/article/me.jpg`,title:`Project Overview`,date:`2025-05-24T00:00:00.000Z`,tags:[`Rust`,`TypeScript`,`Minecraft`,`C++`,`TCP/IP`],desc:`An overview of major projects I have created and worked on.`},body:`
 <!-- markdownlint-disable-next-line MD025 -->
 # Overview
 
@@ -58,7 +58,7 @@ As the Product Owner, my job in the scrum development framework, I am accountabl
 
 ![Budget Craft Poster](https://isoptera.lcsc.edu/~rjziegler/pictures/capstone-poster.png)
 
-Pictured above is our poster given at the annual [LCSC Research Symposium](https://www.lcsc.edu/academic-affairs/research-symposium)
+-# The poster we presented at the annual [LCSC Research Symposium](https://www.lcsc.edu/academic-affairs/research-symposium)
 
 ---
 
@@ -70,7 +70,7 @@ Normal Elevator is a multiplayer game made using Minecraft commands (scripting) 
 
 ![Minecraft Map](https://isoptera.lcsc.edu/~rjziegler/pictures/elevator_entrance.png)
 
-Pictured above is the lobby for Normal Elevator.
+-# The lobby for Normal Elevator.
 
 ---
 
@@ -80,11 +80,12 @@ Particle Swarm Optimizer (PSO) to train a Feed Forward Neural Network (FFNN) for
 
 ![Sin Wave](https://isoptera.lcsc.edu/~rjziegler/pictures/sine-approx.png)
 
-Pictured above is a graphical output of the Sine Approximation program, Blue = Expected, Red = Predicted, Black = Velocity (Each particle in the Particle Swarm).
+-# The graphical output for the Sine Approximation program
+-# Blue = Expected, Red = Predicted, Black = Particle Velocity
 
 ---
 
 ## [Website](https://github.com/The24Kings/whoami)
 
-Here is the link to the source code for this website! Built with React, TypeScript, and Vite; it serves as a portfolio of sorts for my various projects and applications
+The source code for this website, which was built with React, TypeScript, and Vite; it serves as a portfolio of sorts for my various projects and applications
 `},a=n();function o(){return{pages:r(Object.assign({"../../markdown/overview.md":i}),`../../markdown/`),links:[]}}var s=o,c=()=>[{title:`Projects | The24Kings@portfolio`},{name:`description`,content:`Projects by The24Kings.`}],l=e(function(){return(0,a.jsx)(t,{})});export{s as clientLoader,l as default,c as meta};
