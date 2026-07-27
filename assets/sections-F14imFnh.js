@@ -1,0 +1,1 @@
+var e=`app/markdown`,t=`index.md`,n={id:`root`,path:``,dir:``},r={root:n,projects:{id:`projects`,path:`projects`,dir:`projects`}};Object.values(r);export{r as i,t as n,n as r,e as t};

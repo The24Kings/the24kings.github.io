@@ -1,0 +1,1 @@
+import{H as e,L as t}from"./jsx-runtime-CeuHuymL.js";var n=e(t(),1),r=(0,n.createContext)(null),i=()=>{let e=(0,n.useContext)(r);if(!e)throw Error(`useCommandContext must be used within a CommandContext.Provider`);return e};export{r as n,i as t};

@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-CeuHuymL.js";import{s as t,t as n}from"./animations-CPn5Ds-j.js";var r=e(),i=({children:e,html:i})=>(0,r.jsx)(t.div,{className:`post`,variants:n,initial:!1,animate:`animate`,children:i===void 0?(0,r.jsx)(`div`,{id:`md-content`,children:e}):(0,r.jsx)(`div`,{id:`md-content`,dangerouslySetInnerHTML:{__html:i}})});export{i as t};
