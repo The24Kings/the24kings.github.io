@@ -1,0 +1,377 @@
+/*!
+ * giscus theme mirroring the palette in app/index.css.
+ * Loaded inside the giscus iframe, so the values must be duplicated literals.
+ */
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2")
+    format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/inter/files/inter-latin-wght-italic.woff2")
+    format("woff2-variations");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("https://cdn.jsdelivr.net/gh/The24Kings/whoami@main/public/fonts/JetBrainsMono/JetBrainsMonoNerdFontMono-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("https://cdn.jsdelivr.net/gh/The24Kings/whoami@main/public/fonts/JetBrainsMono/JetBrainsMonoNerdFontMono-Italic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("https://cdn.jsdelivr.net/gh/The24Kings/whoami@main/public/fonts/JetBrainsMono/JetBrainsMonoNerdFontMono-Bold.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("https://cdn.jsdelivr.net/gh/The24Kings/whoami@main/public/fonts/JetBrainsMono/JetBrainsMonoNerdFontMono-BoldItalic.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+main {
+  --color-background: #ffffff;
+  --color-panel-card: #f3f3f3;
+  --color-raised-surface: #fafafa;
+  --color-border: #d4d4d4;
+  --color-primary-text: #1e1e1e;
+  --color-muted-text: #6a6a6a;
+  --color-accent-blue: #007acc;
+  --color-folder-blue: #0451a5;
+  --color-file-text: #001080;
+  --color-tag-text: #a31515;
+  --color-hover-background: #e8e8e8;
+  --color-accent-bg: rgba(0, 122, 204, 0.1);
+  --color-accent-border: rgba(0, 122, 204, 0.5);
+  --color-neutral-bg: rgba(106, 106, 106, 0.2);
+
+  --alert-note: #1f6feb;
+  --alert-note-bg: rgba(31, 111, 235, 0.1);
+  --alert-tip: #3fb950;
+  --alert-tip-bg: rgba(63, 185, 80, 0.1);
+  --alert-important: #8957e5;
+  --alert-important-bg: rgba(137, 87, 229, 0.1);
+  --alert-warning: #d29922;
+  --alert-warning-bg: rgba(210, 153, 34, 0.1);
+  --alert-caution: #f85149;
+  --alert-caution-bg: rgba(248, 81, 73, 0.1);
+
+  /* atom-one-light, mirroring app/lib/hljs-theme.css */
+  --syntax-bg: #fafafa;
+  --syntax-text: #383a42;
+  --syntax-comment: #a0a1a7;
+  --syntax-keyword: #a626a4;
+  --syntax-string: #50a14f;
+  --syntax-constant: #986801;
+  --syntax-entity: #4078f2;
+  --syntax-variable: #986801;
+  --syntax-tag: #e45649;
+}
+
+@media (prefers-color-scheme: dark) {
+  main {
+    --color-background: #1e1e1e;
+    --color-panel-card: #252526;
+    --color-raised-surface: #2d2d30;
+    --color-border: #4d4d4d;
+    --color-primary-text: #d4d4d4;
+    --color-muted-text: #969696;
+    --color-accent-blue: #007acc;
+    --color-folder-blue: #569cd6;
+    --color-file-text: #9cdcfe;
+    --color-tag-text: #ce9178;
+    --color-hover-background: #2a2d2e;
+    --color-accent-bg: rgba(0, 122, 204, 0.15);
+    --color-neutral-bg: rgba(150, 150, 150, 0.2);
+
+    /* atom-one-dark */
+    --syntax-bg: #282c34;
+    --syntax-text: #abb2bf;
+    --syntax-comment: #5c6370;
+    --syntax-keyword: #c678dd;
+    --syntax-string: #98c379;
+    --syntax-constant: #d19a66;
+    --syntax-entity: #61aeee;
+    --syntax-variable: #d19a66;
+    --syntax-tag: #e06c75;
+  }
+}
+
+main {
+  --color-canvas-default: var(--color-panel-card);
+  --color-canvas-subtle: var(--color-raised-surface);
+  --color-canvas-inset: var(--color-background);
+  --color-canvas-overlay: var(--color-panel-card);
+
+  --color-fg-default: var(--color-primary-text);
+  --color-fg-muted: var(--color-muted-text);
+  --color-fg-subtle: var(--color-muted-text);
+  --color-fg-on-emphasis: #ffffff;
+
+  --color-border-default: var(--color-border);
+  --color-border-muted: var(--color-border);
+  --color-neutral-muted: var(--color-neutral-bg);
+
+  --color-accent-fg: var(--color-accent-blue);
+  --color-accent-emphasis: var(--color-accent-blue);
+  --color-accent-muted: var(--color-accent-border);
+  --color-accent-subtle: var(--color-accent-bg);
+
+  --color-success-fg: #3fb950;
+  --color-attention-fg: #d29922;
+  --color-attention-muted: rgba(210, 153, 34, 0.4);
+  --color-attention-subtle: rgba(210, 153, 34, 0.15);
+  --color-danger-fg: #f85149;
+  --color-danger-muted: rgba(248, 81, 73, 0.4);
+  --color-danger-subtle: rgba(248, 81, 73, 0.1);
+  --color-done-fg: var(--alert-important);
+  --color-done-emphasis: var(--alert-important);
+  --color-success-emphasis: var(--alert-tip);
+  --color-attention-emphasis: var(--alert-warning);
+  --color-danger-emphasis: var(--alert-caution);
+
+  --color-btn-text: var(--color-primary-text);
+  --color-btn-bg: var(--color-raised-surface);
+  --color-btn-border: var(--color-border);
+  --color-btn-shadow: 0 0 #0000;
+  --color-btn-inset-shadow: 0 0 #0000;
+  --color-btn-hover-bg: var(--color-hover-background);
+  --color-btn-hover-border: var(--color-accent-blue);
+  --color-btn-active-bg: var(--color-hover-background);
+  --color-btn-active-border: var(--color-accent-blue);
+  --color-btn-selected-bg: var(--color-hover-background);
+
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: var(--color-accent-blue);
+  --color-btn-primary-border: var(--color-accent-border);
+  --color-btn-primary-shadow: 0 0 #0000;
+  --color-btn-primary-inset-shadow: 0 0 #0000;
+  --color-btn-primary-hover-bg: #0e8ae0;
+  --color-btn-primary-hover-border: var(--color-accent-border);
+  --color-btn-primary-selected-bg: var(--color-accent-blue);
+  --color-btn-primary-selected-shadow: 0 0 #0000;
+  --color-btn-primary-disabled-text: rgba(255, 255, 255, 0.5);
+  --color-btn-primary-disabled-bg: var(--color-accent-border);
+  --color-btn-primary-disabled-border: var(--color-accent-border);
+
+  --color-action-list-item-default-hover-bg: var(--color-hover-background);
+  --color-segmented-control-bg: var(--color-background);
+  --color-segmented-control-button-bg: var(--color-panel-card);
+  --color-segmented-control-button-selected-border: var(--color-accent-blue);
+  --color-social-reaction-bg-hover: var(--color-hover-background);
+  --color-social-reaction-bg-reacted-hover: var(--color-accent-bg);
+  --color-primer-shadow-inset: 0 0 #0000;
+
+  --color-prettylights-syntax-comment: var(--syntax-comment);
+  --color-prettylights-syntax-constant: var(--syntax-constant);
+  --color-prettylights-syntax-entity: var(--syntax-entity);
+  --color-prettylights-syntax-storage-modifier-import: var(--syntax-text);
+  --color-prettylights-syntax-entity-tag: var(--syntax-tag);
+  --color-prettylights-syntax-keyword: var(--syntax-keyword);
+  --color-prettylights-syntax-string: var(--syntax-string);
+  --color-prettylights-syntax-variable: var(--syntax-variable);
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-brackethighlighter-angle: var(--syntax-comment);
+  --color-prettylights-syntax-invalid-illegal-text: var(--syntax-text);
+  --color-prettylights-syntax-invalid-illegal-bg: rgba(248, 81, 73, 0.2);
+  --color-prettylights-syntax-carriage-return-text: var(--syntax-text);
+  --color-prettylights-syntax-carriage-return-bg: rgba(248, 81, 73, 0.2);
+  --color-prettylights-syntax-string-regex: var(--syntax-string);
+  --color-prettylights-syntax-markup-list: var(--syntax-entity);
+  --color-prettylights-syntax-markup-heading: var(--syntax-tag);
+  --color-prettylights-syntax-markup-italic: var(--syntax-text);
+  --color-prettylights-syntax-markup-bold: var(--syntax-text);
+  --color-prettylights-syntax-markup-deleted-text: var(--syntax-tag);
+  --color-prettylights-syntax-markup-deleted-bg: rgba(248, 81, 73, 0.15);
+  --color-prettylights-syntax-markup-inserted-text: var(--syntax-string);
+  --color-prettylights-syntax-markup-inserted-bg: rgba(63, 185, 80, 0.15);
+  --color-prettylights-syntax-markup-changed-text: var(--syntax-constant);
+  --color-prettylights-syntax-markup-changed-bg: rgba(210, 153, 34, 0.15);
+  --color-prettylights-syntax-markup-ignored-text: var(--color-muted-text);
+  --color-prettylights-syntax-markup-ignored-bg: var(--color-neutral-bg);
+  --color-prettylights-syntax-meta-diff-range: var(--syntax-entity);
+  --color-prettylights-syntax-sublimelinter-gutter-mark: var(--syntax-comment);
+  --color-prettylights-syntax-constant-other-reference-link: var(
+    --syntax-entity
+  );
+
+  background-color: var(--color-canvas-default);
+  color: var(--color-fg-default);
+  font-family: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+main .gsc-homepage-bg {
+  background-color: var(--color-canvas-default);
+}
+
+main code,
+main pre {
+  font-family: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+
+main pre {
+  background-color: var(--syntax-bg);
+  color: var(--syntax-text);
+}
+
+/* Comment bodies, mirroring the article styles in app/components/Article.css */
+
+main .markdown a {
+  color: var(--color-accent-blue);
+}
+
+main .markdown strong {
+  color: var(--color-file-text);
+}
+
+main .markdown em {
+  color: var(--color-tag-text);
+}
+
+main .markdown code:not(pre > code) {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-raised-surface);
+}
+
+main .markdown table th {
+  background: var(--color-raised-surface);
+  color: var(--color-folder-blue);
+  border: 1px solid var(--color-border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+main .markdown table td {
+  border: 1px solid var(--color-border);
+  padding: 8px 12px;
+}
+
+main .markdown table tr:nth-child(2n) td {
+  background: var(--color-raised-surface);
+}
+
+main .markdown table tr {
+  background: none;
+  border-top: none;
+}
+
+main .markdown hr {
+  height: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--color-border);
+}
+
+main .markdown blockquote,
+main .markdown .markdown-alert {
+  border-left: 3px solid;
+  padding: 8px 16px;
+  margin: 18px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+main .markdown blockquote {
+  color: var(--color-muted-text);
+  border-color: var(--color-border);
+}
+
+/* giscus ships no styling for GitHub alerts, so they are recreated here */
+main .markdown .markdown-alert {
+  color: var(--color-primary-text);
+}
+
+main .markdown .markdown-alert > :first-child {
+  margin-top: 0;
+}
+
+main .markdown .markdown-alert > :last-child {
+  margin-bottom: 0;
+}
+
+main .markdown .markdown-alert-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+main .markdown .markdown-alert-title svg {
+  fill: currentColor;
+  margin-right: 0;
+}
+
+main .markdown .markdown-alert.markdown-alert-note {
+  border-color: var(--alert-note);
+  background: var(--alert-note-bg);
+}
+
+main .markdown .markdown-alert-note .markdown-alert-title {
+  color: var(--alert-note);
+}
+
+main .markdown .markdown-alert.markdown-alert-tip {
+  border-color: var(--alert-tip);
+  background: var(--alert-tip-bg);
+}
+
+main .markdown .markdown-alert-tip .markdown-alert-title {
+  color: var(--alert-tip);
+}
+
+main .markdown .markdown-alert.markdown-alert-important {
+  border-color: var(--alert-important);
+  background: var(--alert-important-bg);
+}
+
+main .markdown .markdown-alert-important .markdown-alert-title {
+  color: var(--alert-important);
+}
+
+main .markdown .markdown-alert.markdown-alert-warning {
+  border-color: var(--alert-warning);
+  background: var(--alert-warning-bg);
+}
+
+main .markdown .markdown-alert-warning .markdown-alert-title {
+  color: var(--alert-warning);
+}
+
+main .markdown .markdown-alert.markdown-alert-caution {
+  border-color: var(--alert-caution);
+  background: var(--alert-caution-bg);
+}
+
+main .markdown .markdown-alert-caution .markdown-alert-title {
+  color: var(--alert-caution);
+}
